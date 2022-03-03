@@ -52,8 +52,7 @@ class RealtimeDatabaseController: UIViewController {
 //            }
 //        }
         
-        print("ref = \(ref)")
-        print("autoid = \(self.ref.childByAutoId())")
+        
         
         self.ref.observeSingleEvent(of: .value) { snapshot in
             print("snapshot = \(snapshot.value)")

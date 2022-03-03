@@ -14,6 +14,7 @@
 		70F286AE27CFB5F7009D4F52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70F286AD27CFB5F7009D4F52 /* GoogleService-Info.plist */; };
 		70F286B127CFBAA2009D4F52 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286B027CFBAA2009D4F52 /* RootViewController.swift */; };
 		70F286B327CFD8CF009D4F52 /* RealtimeDatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286B227CFD8CF009D4F52 /* RealtimeDatabaseController.swift */; };
+		70F286B527D0E1FF009D4F52 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286B427D0E1FF009D4F52 /* AuthController.swift */; };
 		822995E346CFE9139B0BB50C /* Pods_Firebase_PR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84F572BF9E870BBBF6714E8 /* Pods_Firebase_PR.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		70F286AD27CFB5F7009D4F52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		70F286B027CFBAA2009D4F52 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		70F286B227CFD8CF009D4F52 /* RealtimeDatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseController.swift; sourceTree = "<group>"; };
+		70F286B427D0E1FF009D4F52 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		DBEC8D8947EE7C99E01FB1E9 /* Pods-Firebase_PR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_PR.release.xcconfig"; path = "Target Support Files/Pods-Firebase_PR/Pods-Firebase_PR.release.xcconfig"; sourceTree = "<group>"; };
 		E84F572BF9E870BBBF6714E8 /* Pods_Firebase_PR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_PR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 			children = (
 				70F286B027CFBAA2009D4F52 /* RootViewController.swift */,
 				70F286B227CFD8CF009D4F52 /* RealtimeDatabaseController.swift */,
+				70F286B427D0E1FF009D4F52 /* AuthController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				70F2869A27CFB3D4009D4F52 /* AppDelegate.swift in Sources */,
 				70F2869C27CFB3D4009D4F52 /* SceneDelegate.swift in Sources */,
+				70F286B527D0E1FF009D4F52 /* AuthController.swift in Sources */,
 				70F286B327CFD8CF009D4F52 /* RealtimeDatabaseController.swift in Sources */,
 				70F286B127CFBAA2009D4F52 /* RootViewController.swift in Sources */,
 			);
