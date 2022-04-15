@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class AuthController: UIViewController {
     var idTextField: UITextField = {
@@ -41,6 +42,8 @@ class AuthController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureUI()
+    
+        
     }
     
     func configureUI() {

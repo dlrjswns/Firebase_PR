@@ -9,7 +9,14 @@ import UIKit
 import FirebaseDatabase
 //import Firebase
 
+class Example: NSObject {
+    var name: String?
+    var id: Int?
+}
+
 class RealtimeDatabaseController: UIViewController {
+    
+    var examples = [Example]()
     
     var button: UIButton = {
         let btn = UIButton(type: .system)
@@ -57,11 +64,23 @@ class RealtimeDatabaseController: UIViewController {
         self.ref.observeSingleEvent(of: .value) { snapshot in
             print("snapshot = \(snapshot.value)")
             for a in snapshot.children {
-                print("a = \(a)")
+//                print("a = \(a)")
+                let exp = Example()
+                let a = a as! DataSnapshot
+                let value = a.value as! [String: Any]
+                exp.setValuesForKeys(value)
+                self.examples.append(exp)
+                self.examples.forEach { example in
+                    print("example = \(example)")
+                }
             }
             
         }
-        
+        self.ref.child("user").observe(.value) { snapshot in
+            for child in snapshot.children {
+                
+            }
+        }
         
     }
     
